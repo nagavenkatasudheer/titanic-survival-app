@@ -38,11 +38,3 @@ if st.button("Predict Survival"):
     st.markdown(f"### 🎯 Prediction: {'✅ Survived' if prediction == 1 else '❌ Did Not Survive'}")
     st.markdown(f"### 📊 Survival Probability: **{probability:.2f}**")
 
-# Deployment Instructions
-st.subheader("📌 Deployment Guide")
-st.write("1. Save this script as `app.py` in your project folder.")
-st.write("2. Ensure you have `titanic_model.pkl` (your trained model) in the same folder.")
-st.write("3. Run the app locally using:")
-st.code("streamlit run app.py", language="bash")
-st.write("4. For online deployment, push your code to a GitHub repository and use Streamlit Community Cloud.")
-st.write("[📖 Streamlit Deployment Guide](https://docs.streamlit.io/streamlit-community-cloud/deploy-your-app)")
